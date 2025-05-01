@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>The Hunt Begins</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    html, body {
+      margin: 0;
+      padding: 0;
+      height: 100%;
+      overflow: hidden; /* Prevent body scroll */
+      font-family: 'Georgia', serif;
+      background-color: #f3eac2;
+      color: #2e1c0e;
+
+      background-image: url(../../images/image.png);
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-position: center center;
+      background-attachment: fixed;
+
+      border: 0.625em solid #a48c65;
+      box-shadow: 0 0 2.5em rgba(0, 0, 0, 0.6);
+    }
+
+    .container {
+      max-width: 900px;
+      width: 90%;
+      height: 90vh;
+      margin: 2vh auto;
+      overflow-y: auto;
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-start;
+      text-align: center;
+      padding: 2em;
+      background-color: rgba(243, 234, 194, 0.85);
+      box-shadow: inset 0 0 1.25em rgba(0,0,0,0.3);
+      border-radius: 0.8em;
+    }
+
+    h1 {
+      font-size: 3.5rem;
+      font-weight: bold;
+      color: #3b1f0f;
+      margin-bottom: 0.5em;
+      text-decoration: underline;
+    }
+
+    h2 {
+      font-size: 2rem;
+      color: #472e1e;
+      margin-top: 1.5em;
+    }
+
+    p, li {
+      font-size: 1.125rem;
+      font-weight: bold;
+      color: #2d1a0d;
+      line-height: 1.7;
+    }
+
+    ul {
+      list-style: square;
+      padding-left: 1.5em;
+      text-align: left;
+      display: inline-block;
+      margin: 0 auto;
+    }
+
+    .quote {
+      font-style: italic;
+      font-weight: bold;
+      color: #5c3e2a;
+      font-size: 1.3rem;
+      margin: 1.5em 0;
+      padding-left: 1em;
+      border-left: 4px solid #c2a875;
+    }
+
+    .start-button {
+      display: inline-block;
+      margin-top: 2em;
+      padding: 1em 2em;
+      font-size: 1.2rem;
+      font-weight: bold;
+      text-decoration: none;
+      color: #fff8dc;
+      background-color: #3b2f2f;
+      border: 3px solid #a48c65;
+      border-radius: 0.6em;
+      box-shadow: 0 0 1em rgba(0,0,0,0.5);
+      transition: background-color 0.3s ease, transform 0.2s ease;
+    }
+
+    .start-button:hover {
+      background-color: #5a4332;
+      transform: scale(1.05);
+      box-shadow: 0 0 1.5em rgba(0,0,0,0.6);
+    }
+
+    /* Responsive tweaks */
+    @media (max-width: 768px) {
+      h1 {
+        font-size: 2.5rem;
+      }
+
+      h2 {
+        font-size: 1.5rem;
+      }
+
+      p, li, .quote {
+        font-size: 1rem;
+      }
+
+      .start-button {
+        font-size: 1rem;
+        padding: 0.8em 1.5em;
+      }
+
+      .container {
+        padding: 1.5em;
+      }
+    }
+
+    @media (max-width: 480px) {
+      h1 {
+        font-size: 2rem;
+      }
+
+      h2 {
+        font-size: 1.3rem;
+      }
+
+      .quote {
+        font-size: 0.95rem;
+      }
+
+      .start-button {
+        width: 100%;
+        font-size: 1rem;
+      }
+
+      ul {
+        padding-left: 1em;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>The Hunt Begins...</h1>
+
+    <div class="quote">“Some treasures are not found — they are earned through trials, wit, and bravery.”</div>
+
+    <h2>🗝️ Your Tale Unfolds</h2>
+    <p>You awaken in a forgotten hall where whispers echo through ancient stone. A staircase calls from the shadows...</p>
+    <p>Descend into the hidden backyard. From there, a broken gate leads you into the thick, breathing jungle.</p>
+    <p>Cross the river, if you dare. But beware — not all who reach the other side survive.</p>
+    <p>In the cave lies the final test: golden discs await. Choose the right one, and the treasure is yours. Choose wrong, and become another forgotten soul.</p>
+
+    <h2>⚔️ Rules of the Hunt</h2>
+    <ul>
+      <li>Click on hidden areas to explore and advance.</li>
+      <li>Each scene holds secrets — trust your instincts.</li>
+      <li>There is no backtracking once you commit to a choice.</li>
+      <li>The final disc will decide your fate — choose wisely.</li>
+    </ul>
+
+    <h2>🏆 The Treasure Awaits</h2>
+    <p>Will you claim the ancient gold... or become part of the legend?</p>
+
+    <a href="page1.html" class="start-button">Start the Hunt</a>
+  </div>
+</body>
+</html>
+
