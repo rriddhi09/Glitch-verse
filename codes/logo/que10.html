@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Question 1 - Logo Guess Game</title>
+    <link rel="stylesheet" href="que.css">
+</head>
+<body>
+    <div class="question">Find out which is the correct logo!</div>
+
+    <div class="logos">
+        
+        <form action="#correct-msg">
+            <button type="submit" class="invisible-btn"></button>
+            <label>
+                <img src="microsoft_correct.png" alt="Correct Pepsi Logo" class="logo">
+            </label>
+        </form>
+
+        
+        <form action="#incorrect-msg">
+            <button type="submit" class="invisible-btn"></button>
+            <label>
+                <img src="microsoft_wrong.png" alt="Incorrect Pepsi Logo" class="logo">
+            </label>
+        </form>
+    </div>
+
+    <div id="correct-msg" class="message correct-msg">
+        ✅ "Empowering You! You got it right—now go change the world! 💻🚀🎉"
+    </div>
+    
+    <div id="incorrect-msg" class="message incorrect-msg">
+        ❌ "Oops! Looks like you hit a 'Blue Screen of Wrong'! Try again! 😂🖥️"
+    </div>
+    
+    
+    <a href="end.html" class="next-btn">Next Question ➡️</a>
+</body>
+</html>

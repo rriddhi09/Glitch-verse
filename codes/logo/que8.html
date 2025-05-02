@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Question 1 - Logo Guess Game</title>
+    <link rel="stylesheet" href="que.css">
+</head>
+<body>
+    <div class="question">Find out which is the correct logo!</div>
+
+    <div class="logos">
+        
+        <form action="#incorrect-msg">
+            <button type="submit" class="invisible-btn"></button>
+            <label>
+                <img src="rolex_wrong.png" alt="Correct Pepsi Logo" class="logo">
+            </label>
+        </form>
+
+        
+        <form action="#correct-msg">
+            <button type="submit" class="invisible-btn"></button>
+            <label>
+                <img src="rolex_correct.png" alt="Incorrect Pepsi Logo" class="logo">
+            </label>
+        </form>
+    </div>
+
+    <div id="correct-msg" class="message correct-msg">
+        ✅ "A Crown for Every Achievement! You truly have a timeless sense! 👑⌚✨"
+    </div>
+    <div id="incorrect-msg" class="message incorrect-msg">
+        ❌ "Oops! Time’s up! Maybe check the right logo next time! 😂⏳"
+    </div>
+    
+    <a href="que9.html" class="next-btn">Next Question ➡️</a>
+</body>
+</html>

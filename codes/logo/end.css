@@ -1,0 +1,66 @@
+/* General Styles */
+body {
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    background: url('logo_que.png') no-repeat center center/cover;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: white;
+    font-family: 'Fredoka One', cursive, sans-serif;
+}
+
+/* End Screen Styling */
+.container {
+    background: rgba(0, 0, 0, 0.7);
+    padding: 40px;
+    border-radius: 20px;
+    box-shadow: 0px 10px 20px rgba(255, 204, 0, 0.7);
+    max-width: 80%;
+}
+
+h1 {
+    font-size: 3rem;
+    text-shadow: 4px 4px 10px gold;
+}
+
+.end-text {
+    font-size: 2rem;
+    font-weight: bold;
+    margin-top: 20px;
+    padding: 15px 25px;
+    text-shadow: 3px 3px 8px black;
+    background: rgba(0, 0, 0, 0.6);
+    border-radius: 20px;
+    letter-spacing: 2px;
+}
+
+.explore {
+    font-size: 1.8rem;
+    font-weight: bold;
+    color: gold;
+    margin-top: 30px;
+    text-shadow: 2px 2px 6px black;
+}
+.home-btn {
+    display: inline-block;
+    margin-top: 30px;
+    padding: 15px 30px;
+    background-color: gold;
+    color: black;
+    font-size: 1.5rem;
+    font-weight: bold;
+    text-decoration: none;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(255, 204, 0, 0.6);
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.home-btn:hover {
+    background-color: #ffcc00;
+    transform: scale(1.05);
+}
+

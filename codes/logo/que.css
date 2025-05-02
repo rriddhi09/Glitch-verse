@@ -1,0 +1,105 @@
+
+body {
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    background: url('logo_que.png') no-repeat center center/cover;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: white;
+    font-family: 'Fredoka One', cursive, sans-serif;
+}
+
+.question {
+    font-size: 2.5rem;
+    font-weight: bold;
+    margin-bottom: 30px;
+    text-shadow: 3px 3px 8px black;
+    background: rgba(0, 0, 0, 0.6);
+    padding: 15px 25px;
+    border-radius: 20px;
+    letter-spacing: 2px;
+}
+
+.logos {
+    display: flex;
+    gap: 80px;
+    justify-content: center;
+    align-items: center;
+}
+
+.logo {
+    width: 300px;
+    height: auto;
+    border-radius: 25px;
+    border: 6px solid white;
+    padding: 12px;
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+    cursor: pointer;
+}
+.logo:hover, .invisible-btn:hover + label img {
+    transform: scale(1.15);
+    border-color: #ffcc00;
+    box-shadow: 0px 10px 20px rgba(255, 204, 0, 0.7);
+}
+
+.invisible-btn {
+    position: absolute;
+    width: 300px;
+    height: 320px;
+    background: transparent;
+    border: none;
+    cursor: pointer;
+    z-index: 2;
+    opacity: 0;
+}
+
+.message {
+    display: none;
+    font-size: 2rem;
+    font-weight: bold;
+    margin-top: 20px;
+    padding: 15px 20px;
+    border-radius: 15px;
+    text-shadow: 3px 3px 8px black;
+    background: rgba(0, 0, 0, 0.6);
+}
+
+.correct-msg {
+    color: rgb(22, 204, 22);
+}
+.incorrect-msg {
+    color: red;
+}
+
+
+#correct-msg:target,
+#incorrect-msg:target {
+    display: block;
+}
+
+.next-btn {
+    display: none;
+    margin-top: 30px;
+    padding: 15px 30px;
+    font-size: 1.5rem;
+    color: white;
+    background: #0073e6;
+    border: none;
+    border-radius: 15px;
+    cursor: pointer;
+    transition: 0.3s;
+    text-decoration: none;
+}
+.next-btn:hover {
+    background: #005bb5;
+    transform: scale(1.1);
+}
+
+#correct-msg:target ~ .next-btn,
+#incorrect-msg:target ~ .next-btn {
+    display: inline-block;
+}

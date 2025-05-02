@@ -1,0 +1,22 @@
+
+        body {
+            margin: 0;
+            padding: 0;
+            height: 100vh;
+            background: url('logo2.jpg') no-repeat center center/cover;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .start-link {
+            position: absolute;
+            width: 550px;
+            height: 180px;
+            top: 55%; /* Moved slightly down */
+            left: 50%;
+            right: 55%;
+            transform: translate(-50%, -50%);
+            cursor: pointer;
+            z-index: 2;
+        }
+    
